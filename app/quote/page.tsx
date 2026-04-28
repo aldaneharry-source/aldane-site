@@ -76,11 +76,17 @@ export default function QuotePage() {
                   className="w-full rounded-xl border border-white/10 bg-[#0b1020] px-4 py-3 text-white outline-none focus:border-blue-500"
                 >
                   <option value="">Select a service</option>
-                  <option value="Website Design">Website Design</option>
-                  <option value="Web Application">Web Application</option>
-                  <option value="Automation Tool">Automation Tool</option>
-                  <option value="Hosting and Maintenance">
-                    Hosting and Maintenance
+                  <option value="Website Development">
+                    Website Development
+                  </option>
+                  <option value="Web & App Development">
+                    Web & App Development
+                  </option>
+                  <option value="Business Automation">
+                    Business Automation
+                  </option>
+                  <option value="Hosting & Maintenance">
+                    Hosting & Maintenance
                   </option>
                   <option value="AI / Software Consulting">
                     AI / Software Consulting
@@ -134,6 +140,43 @@ export default function QuotePage() {
                 className="w-full rounded-xl border border-white/10 bg-[#0b1020] px-4 py-3 text-white outline-none focus:border-blue-500"
                 placeholder="Briefly describe what you need built..."
               />
+            </div>
+
+            <div className="space-y-3">
+              <label className="flex items-start gap-3 text-sm text-slate-400">
+                <input
+                  type="checkbox"
+                  name="privacyConsent"
+                  required
+                  className="mt-1 h-4 w-4 accent-blue-600"
+                />
+
+                <span>
+                  I agree to the{" "}
+                  <a
+                    href="/privacy"
+                    className="text-blue-400 underline hover:text-blue-300"
+                  >
+                    Privacy Policy
+                  </a>{" "}
+                  and consent to being contacted by Aldane Systems regarding my
+                  quote request.
+                </span>
+              </label>
+
+              <label className="flex items-start gap-3 text-sm text-slate-400">
+                <input
+                  type="checkbox"
+                  name="marketingConsent"
+                  className="mt-1 h-4 w-4 accent-blue-600"
+                />
+
+                <span>
+                  I agree to receive occasional updates, offers, and marketing
+                  communications from Aldane Systems. I understand this is
+                  optional.
+                </span>
+              </label>
             </div>
 
             <button
