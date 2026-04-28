@@ -51,7 +51,7 @@ export default function Home() {
             </a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#pricing">Pricing</a>
+            <a href="/pricing">Pricing</a>
             <a
               href="/contact"
               className="rounded-lg border border-blue-500 px-4 py-2"
