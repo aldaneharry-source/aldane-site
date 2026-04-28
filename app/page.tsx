@@ -53,7 +53,7 @@ export default function Home() {
             <a href="#services">Services</a>
             <a href="#pricing">Pricing</a>
             <a
-              href="#contact"
+              href="/contact"
               className="rounded-lg border border-blue-500 px-4 py-2"
             >
               Contact Us
@@ -78,7 +78,7 @@ export default function Home() {
 
           <div className="flex gap-4">
             <a
-              href="#contact"
+              href="/contact"
               className="rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700"
             >
               Get In Touch →
