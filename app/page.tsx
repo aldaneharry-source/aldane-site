@@ -1,33 +1,6 @@
 export default function Home() {
-  const services = [
-    {
-      icon: "🖥️",
-      title: "Website Development",
-      text: "Modern websites that convert visitors.",
-      link: "#website-development",
-    },
-    {
-      icon: "📦",
-      title: "Web & App Development",
-      text: "Custom applications built for performance.",
-      link: "#web-app-development",
-    },
-    {
-      icon: "⚙️",
-      title: "Business Automation",
-      text: "Automate workflows and processes.",
-      link: "#business-automation",
-    },
-    {
-      icon: "☁️",
-      title: "Hosting & Maintenance",
-      text: "Reliable hosting and support.",
-      link: "#hosting-maintenance",
-    },
-  ];
-
   return (
-    <main className="min-h-screen bg-[#050B14] text-white">
+    <main className="min-h-screen overflow-hidden bg-[#050B14] text-white">
       <nav className="sticky top-0 z-50 border-b border-slate-800 bg-[#050B14]/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <div className="flex items-center gap-3">
@@ -46,7 +19,7 @@ export default function Home() {
           </div>
 
           <div className="hidden items-center gap-8 text-sm md:flex">
-            <a className="text-blue-400" href="#">
+            <a className="text-blue-400" href="/">
               Home
             </a>
             <a href="#about">About</a>
@@ -54,7 +27,7 @@ export default function Home() {
             <a href="/pricing">Pricing</a>
             <a
               href="/contact"
-              className="rounded-lg border border-blue-500 px-4 py-2"
+              className="rounded-lg border border-blue-500 px-4 py-2 transition hover:bg-blue-600/20"
             >
               Contact Us
             </a>
@@ -63,43 +36,56 @@ export default function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 md:grid-cols-2">
-        <div>
-          <h2 className="mb-6 text-4xl font-bold leading-tight md:text-6xl">
-            We Build Digital Solutions That Move Your Business{" "}
-            <span className="text-blue-500">Forward.</span>
-          </h2>
+      <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.22),transparent_38%),radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.14),transparent_35%)]">
+        <div className="absolute left-10 top-20 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 h-72 w-72 rounded-full bg-indigo-600/20 blur-3xl"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-[size:44px_44px]"></div>
 
-          <p className="mb-8 max-w-xl text-slate-300">
-            Aldane Systems creates modern websites, powerful applications, and
-            smart automation systems designed to drive growth, streamline
-            operations, and build a strong, scalable digital presence.
-          </p>
+        <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+              Software Development • Websites • Automation
+            </p>
 
-          <div className="flex gap-4">
-            <a
-              href="/contact"
-              className="rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-700"
-            >
-              Get In Touch →
-            </a>
+            <h2 className="mb-6 text-4xl font-bold leading-tight md:text-6xl">
+              We Build Websites, Apps, and Automation Systems for{" "}
+              <span className="text-blue-500">Growing Businesses.</span>
+            </h2>
 
-            <a
-              href="/services"
-              className="rounded-lg border border-slate-500 px-6 py-3 font-semibold hover:border-blue-500"
-            >
-              View Services
-            </a>
+            <p className="mb-8 max-w-xl text-lg leading-8 text-slate-300">
+              Aldane Systems helps businesses launch professional websites,
+              custom web applications, and automation tools that save time,
+              improve customer experience, and support growth.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="/quote"
+                className="rounded-lg bg-blue-600 px-6 py-3 font-semibold transition hover:bg-blue-700"
+              >
+                Request a Quote →
+              </a>
+
+              <a
+                href="/services"
+                className="rounded-lg border border-slate-500 px-6 py-3 font-semibold transition hover:border-blue-500 hover:bg-blue-600/10"
+              >
+                View Services
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div className="flex justify-center">
-          <div className="relative flex h-80 w-80 items-center justify-center rounded-full bg-blue-600/10 shadow-[0_0_80px_rgba(37,99,235,0.35)]">
-            <img
-              src="/logo1.png"
-              alt="Aldane Systems Logo"
-              className="h-72 w-72 object-contain drop-shadow-[0_0_40px_rgba(59,130,246,0.6)]"
-            />
+          <div className="flex justify-center">
+            <div className="relative flex h-80 w-80 items-center justify-center rounded-full border border-blue-500/20 bg-blue-600/10 shadow-[0_0_90px_rgba(37,99,235,0.38)]">
+              <div className="absolute inset-6 rounded-full border border-blue-400/10"></div>
+              <div className="absolute inset-12 rounded-full border border-blue-400/10"></div>
+
+              <img
+                src="/logo1.png"
+                alt="Aldane Systems Logo"
+                className="relative z-10 h-72 w-72 object-contain drop-shadow-[0_0_40px_rgba(59,130,246,0.65)]"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -181,7 +167,10 @@ export default function Home() {
           ["📱", "Mobile Friendly", "Perfect on all devices."],
           ["🎧", "Support You Can Trust", "Ongoing support when needed."],
         ].map(([icon, title, text]) => (
-          <div key={title} className="rounded-xl bg-slate-900/80 p-6">
+          <div
+            key={title}
+            className="rounded-xl border border-slate-800 bg-slate-900/80 p-6 shadow-xl"
+          >
             <div className="mb-3 text-3xl">{icon}</div>
             <h3 className="mb-2 font-bold">{title}</h3>
             <p className="text-sm text-slate-400">{text}</p>
