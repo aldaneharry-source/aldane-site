@@ -495,7 +495,7 @@ export default function Home() {
         </ul>
 
         <a
-          href="#contact"
+          href="/quote"
           className="block rounded-lg bg-blue-600 px-6 py-3 text-center font-semibold hover:bg-blue-700"
         >
           Request Quote
