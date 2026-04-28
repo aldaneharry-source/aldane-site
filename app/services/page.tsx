@@ -109,8 +109,9 @@ export default function ServicesPage() {
             <h2 className="text-3xl font-bold">How We Work</h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-slate-400">
-              Every project follows a clear process, because guessing your way
-              through software development is how budgets go to die.
+              Our work goes beyond development. We combine planning, design, and engineering into a structured process that ensures clarity, 
+              efficiency, and reliable results.
+              We collaborate closely throughout each stage, keeping your goals, users, and technology aligned from initial concept through delivery.
             </p>
           </div>
 
