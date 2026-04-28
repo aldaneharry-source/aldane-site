@@ -74,6 +74,43 @@ export default function ContactPage() {
               />
             </div>
 
+            <div className="space-y-3 pt-2">
+              <label className="flex items-start gap-3 text-sm text-slate-400">
+                <input
+                  type="checkbox"
+                  name="privacyConsent"
+                  required
+                  className="mt-1 h-4 w-4 accent-blue-600"
+                />
+
+                <span>
+                  I agree to the{" "}
+                  <a
+                    href="/privacy"
+                    className="text-blue-400 underline hover:text-blue-300"
+                  >
+                    Privacy Policy
+                  </a>{" "}
+                  and consent to being contacted by Aldane Systems regarding my
+                  inquiry.
+                </span>
+              </label>
+
+              <label className="flex items-start gap-3 text-sm text-slate-400">
+                <input
+                  type="checkbox"
+                  name="marketingConsent"
+                  className="mt-1 h-4 w-4 accent-blue-600"
+                />
+
+                <span>
+                  I agree to receive occasional updates, offers, and marketing
+                  communications from Aldane Systems. I understand this is
+                  optional.
+                </span>
+              </label>
+            </div>
+
             <button
               type="submit"
               className="w-full rounded-lg bg-blue-600 py-3 font-semibold transition hover:bg-blue-700"
