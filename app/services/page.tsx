@@ -243,9 +243,8 @@ export default function ServicesPage() {
           <h2 className="text-3xl font-bold">Built for Real Business Needs</h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-slate-300">
-            Our focus is not just writing code. It is building practical,
-            reliable systems that help businesses communicate clearly, serve
-            customers better, and operate with less friction.
+            Our focus is building practical, reliable systems that help businesses communicate clearly, 
+            serve customers better, and operate with less friction.
           </p>
 
           <a
