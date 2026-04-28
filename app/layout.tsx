@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   description:
     "Aldane Systems builds websites, applications, automation tools, hosting, and maintenance solutions for businesses.",
   icons: {
-    icon: "/logo1.png",
+    icon: [
+      {url: "/logo1.png" },
+    ],
+    shortcut: ["/logo1.png"],
+    apple: ["/logo1.png"],
   },
 };
 
