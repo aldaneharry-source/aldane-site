@@ -16,6 +16,7 @@ export default function QuoteForm() {
     const data = {
       name: formData.get("name"),
       email: formData.get("email"),
+      phone: formData.get("phone"),
       business: formData.get("business"),
       service: formData.get("service"),
       budget: formData.get("budget"),
