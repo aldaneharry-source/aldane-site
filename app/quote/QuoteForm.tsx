@@ -100,6 +100,19 @@ export default function QuoteForm() {
           </div>
         </div>
 
+        <div>
+          <label className="mb-2 block text-sm font-medium text-slate-200">
+            Contact Number
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            required
+            className="w-full rounded-xl border border-white/10 bg-[#0b1020] px-4 py-3 text-white outline-none focus:border-blue-500"
+            placeholder="e.g. (123) 456-7890"
+          />
+        </div>
+
         <div className="grid gap-6 md:grid-cols-2">
           <div>
             <label className="mb-2 block text-sm font-medium text-slate-200">
